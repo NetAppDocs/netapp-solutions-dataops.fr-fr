@@ -1,0 +1,38 @@
+---
+sidebar: sidebar 
+permalink: xcp/xcp-bp-performance-tuning.html 
+keywords: performance, tuning, operations, windows 
+summary: Cette section fournit certains des paramètres de réglage qui aident à améliorer les performances des opérations XCP. 
+---
+= Réglage des performances
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Cette section fournit certains des paramètres de réglage qui aident à améliorer les performances des opérations XCP :
+
+* Pour une meilleure mise à l'échelle et pour répartir la charge de travail sur plusieurs instances XCP, divisez les sous-dossiers de chaque instance XCP pour la migration et le transfert de données.
+* XCP peut utiliser un maximum de ressources CPU : plus il y a de cœurs CPU, meilleures sont les performances.  Par conséquent, vous devriez avoir plus de CPU sur le serveur XCP.  Nous avons testé en laboratoire 128 Go de RAM et 48 processeurs cœurs, qui ont fourni de meilleures performances que 8 processeurs et 8 Go de RAM.
+* Copie XCP avec le `-parallel` l'option est basée sur le nombre de CPU.  Le nombre par défaut de threads parallèles (sept) est parfois suffisant pour la plupart des opérations de transfert et de migration de données XCP.  Pour XCP Windows par défaut, le nombre de processus parallèles est égal au nombre de CPU.  Le nombre maximum pour le `-parallel` l'option doit être inférieure ou égale au nombre de cœurs.
+* Le 10GbE est un bon début pour le transfert de données.  Cependant, nous avons testé avec 25 GbE et 100 GbE, qui ont fourni un meilleur transfert de données et sont recommandés pour le transfert de données de grande taille.
+* Pour Azure NetApp Files, les performances varient en fonction du niveau de service.  Pour plus d’informations, consultez le tableau suivant, qui présente les niveaux de service et les détails des performances Azure NetApp Files .
+
+
+|===
+| Niveau de service | Standard | Prime | Ultra 
+
+
+| Débit | 16 Mo/s/téraoctet (To) | 64 Mo/s/To | 128 Mo/s/To 
+
+
+| Types de charges de travail | Partages de fichiers à usage général, courrier électronique et Web | BM, bases de données et applications | Applications sensibles à la latence 
+
+
+| Performance expliquée | Performances standard : 1 000 IOPS par To (16 000 E/S) et 16 Mbit/s/To | Performances premium – 4 000 IOPS par To (16 000 E/S) et 64 Mbit/s/To | Performances extrêmes : 8 000 IOPS par To (16 000 E/S) et 128 Mbit/s/To 
+|===
+Vous devez choisir le niveau de service approprié en fonction du débit et des types de charge de travail.  La plupart des clients commencent avec le niveau Premium et modifient le niveau de service en fonction de la charge de travail.

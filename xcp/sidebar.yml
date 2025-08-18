@@ -1,0 +1,49 @@
+---
+section: bp-xcp
+title: Migration de données avec NetApp XCP
+pdf-filename: Migration de données avec NetApp XCP
+entries:
+- title: Introduction
+  url: "/xcp/xcp-bp-introduction.html"
+- title: NetApp XCP
+  url: "/xcp/xcp-bp-netapp-xcp-overview.html"
+- title: Flux de travail de migration
+  url: "/xcp/xcp-bp-migration-workflow.html"
+- title: Analyse de fichiers
+  url: "/xcp/xcp-bp-file-analytics.html"
+- title: Étapes de déploiement
+  url: "/xcp/xcp-bp-deployment-steps.html"
+- title: Directives de dimensionnement
+  url: "/xcp/xcp-bp-sizing-guidelines.html"
+- title: Réglage des performances
+  url: "/xcp/xcp-bp-performance-tuning.html"
+- title: Scénarios clients
+  entries:
+  - title: Aperçu
+    url: "/xcp/xcp-bp-scenarios.html"
+  - title: Du lac de données à ONTAP NFS
+    url: "/xcp/xcp-bp-data-lake-to-ontap-nfs.html"
+  - title: Calcul haute performance vers ONTAP NFS
+    url: "/xcp/xcp-bp-hpc.html"
+  - title: Utilisation du XCP Data Mover pour migrer des millions de petits fichiers
+      vers un stockage flexible
+    url: "/xcp/xcp-bp-small-files.html"
+  - title: Utilisation du XCP Data Mover pour migrer des fichiers volumineux
+    url: "/xcp/xcp-bp-large-files.html"
+  - title: Fichiers en double
+    url: "/xcp/xcp-bp-duplicate-files.html"
+  - title: Analyse et copie des données basées sur des dates spécifiques
+    url: "/xcp/xcp-bp-specific-date.html"
+  - title: Création d'un fichier CSV à partir d'un partage SMB/CIFS
+    url: "/xcp/xcp-bp-smb-cifs-csv.html"
+  - title: Migration des données de 7-Mode vers ONTAP
+    url: "/xcp/xcp-bp-7-mode.html"
+  - title: Migration de données CIFS avec ACL D'une boîte de stockage source vers
+      ONTAP
+    url: "/xcp/xcp-bp-cifs-acls.html"
+- title: Lignes directrices et recommandations sur les meilleures pratiques
+  url: "/xcp/xcp-bp-best-practices.html"
+- title: Dépannage
+  url: "/xcp/xcp-bp-troubleshooting.html"
+- title: Où trouver des informations supplémentaires
+  url: "/xcp/xcp-additional-info.html"

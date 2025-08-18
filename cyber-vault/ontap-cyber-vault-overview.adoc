@@ -1,0 +1,50 @@
+---
+sidebar: sidebar 
+keywords: Cyber vault, cybervault, cyber-vault, data protection, security, ransomware, ONTAP 
+permalink: cyber-vault/ontap-cyber-vault-overview.html 
+summary: 'Il s"agit d"un aperçu de la solution de coffre-fort cybernétique NetApp ONTAP , optimisée par SnapLock Compliance pour une conservation des données immuable et indélébile.' 
+---
+= Présentation du coffre-fort cybernétique ONTAP
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+La principale menace qui nécessite la mise en œuvre d’un coffre-fort informatique est la prévalence croissante et la sophistication croissante des cyberattaques, en particulier les ransomwares et les violations de données. link:https://www.verizon.com/business/resources/reports/dbir/["Avec une augmentation du phishing"^] et des méthodes de vol d’informations d’identification toujours plus sophistiquées, les informations d’identification utilisées pour lancer une attaque par ransomware pourraient ensuite être utilisées pour accéder aux systèmes d’infrastructure.  Dans ces cas, même les systèmes d’infrastructure renforcés risquent d’être attaqués.  La seule défense contre un système compromis est de protéger et d’isoler vos données dans un coffre-fort informatique.
+
+Le coffre-fort cybernétique basé sur ONTAP de NetApp offre aux entreprises une solution complète et flexible pour protéger leurs actifs de données les plus critiques.  En exploitant l'espacement logique avec des méthodologies de renforcement robustes, ONTAP vous permet de créer des environnements de stockage sécurisés et isolés, résilients face aux cybermenaces en constante évolution.  Avec ONTAP, vous pouvez garantir la confidentialité, l’intégrité et la disponibilité de vos données tout en maintenant l’agilité et l’efficacité de votre infrastructure de stockage.
+
+
+NOTE: À partir de juillet 2024, le contenu des rapports techniques précédemment publiés au format PDF a été intégré à la documentation des produits ONTAP .  De plus, les nouveaux rapports techniques (TR) tels que ce document ne recevront plus de numéros TR.
+
+
+
+== Qu'est-ce qu'un coffre-fort informatique ?
+
+Un coffre-fort informatique est une technique spécifique de protection des données qui consiste à stocker des données critiques dans un environnement isolé, séparé de l'infrastructure informatique principale.
+
+Référentiel de données « isolé », *immuable* et *indélébile*, immunisé contre les menaces affectant le réseau principal, telles que les logiciels malveillants, les rançongiciels ou même les menaces internes.  Un coffre-fort informatique peut être réalisé avec des instantanés *immuables* et *indélébiles*.
+
+Les sauvegardes par espacement d'air qui utilisent des méthodes traditionnelles impliquent la création d'espace et la séparation physique des supports primaire et secondaire.  En déplaçant les médias hors site et/ou en coupant la connectivité, les mauvais acteurs n’ont pas accès aux données.  Cela protège les données mais peut entraîner des temps de récupération plus lents.
+
+
+
+== L'approche de NetApp en matière de coffre-fort informatique
+
+Les principales caractéristiques de l'architecture de référence NetApp pour un coffre-fort informatique comprennent :
+
+* Infrastructure de stockage sécurisée et isolée (par exemple, systèmes de stockage isolés)
+* Les copies des données doivent être à la fois *immuables* et *indélébiles* sans exception
+* Contrôles d'accès stricts et authentification multifactorielle
+* Capacités de restauration rapide des données
+
+
+Vous pouvez utiliser le stockage NetApp avec ONTAP comme un coffre-fort cybernétique isolé en tirant partilink:https://docs.netapp.com/us-en/ontap/snaplock/commit-snapshot-copies-worm-concept.html["SnapLock Compliance aux copies Snapshot protégées par WORM"^] .  Vous pouvez effectuer toutes les tâches de SnapLock Compliance de base sur le coffre-fort Cyber.  Une fois configurés, les volumes Cyber Vault sont automatiquement protégés, éliminant ainsi le besoin de valider manuellement les copies Snapshot sur WORM.  Vous trouverez plus d'informations sur l'espacement d'air logique dans ce document.link:https://www.netapp.com/blog/ransomware-protection-snaplock/["blog"^]
+
+SnapLock Compliance est utilisé pour se conformer aux réglementations bancaires et financières SEC 70-a-4(f), FINRA 4511(c) et CFTC 1.31(c)-(d).  Il a été certifié par Cohasset Associates pour adhérer à ces réglementations (rapport d'audit disponible sur demande).  En utilisant SnapLock Compliance avec cette certification, vous obtenez un mécanisme renforcé pour l'isolement de vos données sur lequel s'appuient les plus grandes institutions financières du monde pour garantir à la fois la conservation et la récupération des dossiers bancaires.
+
+image:ontap-cyber-vault-logical-air-gap.png["Coffre-fort cybernétique à isolation thermique logique utilisant NetApp ONTAP"]

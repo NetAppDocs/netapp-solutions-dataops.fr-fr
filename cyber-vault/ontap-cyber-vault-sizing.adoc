@@ -1,0 +1,94 @@
+---
+sidebar: sidebar 
+keywords: Cyber vault, cybervault, cyber-vault, data protection, security, ransomware, ONTAP, hardening 
+permalink: cyber-vault/ontap-cyber-vault-sizing.html 
+summary: Conseils pour vous aider à dimensionner un coffre-fort numérique ONTAP 
+---
+= Dimensionnement d'un coffre-fort informatique avec ONTAP
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Le dimensionnement d'un coffre-fort informatique nécessite de comprendre la quantité de données qui devront être restaurées dans un objectif de temps de récupération (RTO) donné.  De nombreux facteurs entrent en jeu dans la conception d’une solution de coffre-fort informatique de taille adaptée.  Les performances et la capacité doivent être prises en compte lors du dimensionnement d’un coffre-fort informatique.
+
+
+
+== Considérations relatives au dimensionnement des performances
+
+. Quels sont les modèles de plateformes sources (FAS v AFF A-Series v AFF C-Series) ?
+. Quelle est la bande passante et la latence entre la source et le coffre-fort informatique ?
+. Quelle est la taille des fichiers et combien de fichiers ?
+. Quel est votre objectif de temps de récupération ?
+. Quelle quantité de données devez-vous récupérer dans le cadre du RTO ?
+. Combien de relations de fan-in SnapMirror le coffre-fort cybernétique va-t-il ingérer ?
+. Y aura-t-il une ou plusieurs récupérations en même temps ?
+. Ces multiples récupérations se produiront-elles lors de la même primaire ?
+. SnapMirror sera-t-il répliqué vers le coffre-fort lors d'une récupération à partir d'un coffre-fort ?
+
+
+
+
+=== Exemples de dimensionnement
+
+Voici des exemples de différentes configurations de coffres-forts cybernétiques.
+
+image:ontap-cyber-vault-sizing.png["Options de configuration du coffre-fort cybernétique"]
+
+
+
+== Considérations relatives au dimensionnement de la capacité
+
+La quantité d'espace disque requise pour un volume de destination de coffre-fort cybernétique ONTAP dépend de divers facteurs, dont le plus important est le taux de variation des données dans le volume source.  La planification de sauvegarde et la planification d'instantanés sur le volume de destination affectent toutes deux l'utilisation du disque sur le volume de destination, et le taux de changement sur le volume source n'est probablement pas constant.  Il est judicieux de prévoir une capacité de stockage supplémentaire au-delà de celle requise pour s'adapter aux changements futurs du comportement de l'utilisateur final ou de l'application.
+
+Le dimensionnement d'une relation pour 1 mois de rétention dans ONTAP nécessite de calculer les besoins de stockage en fonction de plusieurs facteurs, notamment la taille de l'ensemble de données principal, le taux de modification des données (taux de modification quotidien) et les économies de déduplication et de compression (le cas échéant).
+
+Voici l’approche étape par étape :
+
+La première étape consiste à connaître la taille du ou des volumes sources que vous protégez avec le coffre-fort numérique.  Il s’agit de la quantité de base de données qui sera initialement répliquée vers la destination du coffre-fort informatique.  Ensuite, estimez le taux de variation quotidien de l’ensemble de données.  Il s’agit du pourcentage de données qui change chaque jour.  Il est essentiel de bien comprendre le caractère dynamique de vos données.
+
+Par exemple:
+
+* Taille du jeu de données principal = 5 To
+* Taux de variation quotidien = 5 % (0,05)
+* Efficacité de déduplication et de compression = 50 % (0,50)
+
+
+Maintenant, passons en revue le calcul :
+
+* Calculer le taux de variation des données quotidiennes :
++
+`Changed data per day = 5000 * 5% = 250GB`
+
+* Calculez le total des données modifiées sur 30 jours :
++
+`Total changed data in 30 days = 250 GB * 30 = 7.5TB`
+
+* Calculez le stockage total requis :
++
+`TOTAL = 5TB + 7.5TB = 12.5TB`
+
+* Appliquer les économies de déduplication et de compression :
++
+`EFFECTIVE = 12.5TB * 50% = 6.25TB`
+
+
+
+*Résumé des besoins de stockage*
+
+* Sans efficacité : il faudrait *12,5 To* pour stocker 30 jours de données du coffre-fort informatique.
+* Avec une efficacité de 50 % : il faudrait *6,25 To* de stockage après déduplication et compression.
+
+
+
+NOTE: Les copies instantanées peuvent entraîner une surcharge supplémentaire en raison des métadonnées, mais celle-ci est généralement mineure.
+
+
+NOTE: Si plusieurs sauvegardes sont effectuées par jour, ajustez le calcul en fonction du nombre de copies Snapshot effectuées chaque jour.
+
+
+NOTE: Tenez compte de la croissance des données au fil du temps pour garantir que le dimensionnement est à l’épreuve du temps.

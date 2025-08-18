@@ -1,0 +1,29 @@
+---
+sidebar: sidebar 
+permalink: cyber-vault/ontap-cyber-vault-ps-dr.html 
+keywords: Cyber vault, powershell, script, configuration, validation, hardening 
+summary: 'Il s"agit de la solution NetApp ONTAP pour la configuration, le renforcement et la validation d"un coffre-fort cybernétique basé sur ONTAP' 
+---
+= Récupération de données du coffre-fort cybernétique ONTAP
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Si des données sont détruites dans le centre de données de production, les données du coffre-fort informatique peuvent être récupérées en toute sécurité dans l'environnement choisi.  Contrairement à une solution physiquement isolée, le coffre-fort cybernétique ONTAP isolé est construit à l'aide de fonctionnalités ONTAP natives telles que SnapLock Compliance et SnapMirror.  Le résultat est un processus de récupération à la fois rapide et facile à exécuter.
+
+En cas d'attaque par ransomware et de nécessité de récupération à partir du coffre-fort informatique, le processus de récupération est simple et facile car les copies instantanées hébergées dans le coffre-fort informatique sont utilisées pour restaurer les données cryptées.
+
+image:ontap-cyber-vault-data-recovery.png["Restaurer la relation"]
+
+Si l'exigence est de fournir une méthode plus rapide pour remettre les données en ligne lorsque cela est nécessaire pour valider, isoler et analyser rapidement les données en vue de leur récupération.  Cela peut être facilement réalisé en utilisant FlexClone avec l'option snaplock-type définie sur le type non-snaplock.
+
+
+NOTE: À partir d' ONTAP 9.13.1, la restauration d'une copie Snapshot verrouillée sur le volume SnapLock de destination d'une relation de coffre SnapLock peut être instantanément restaurée en créant un FlexClone avec l'option snaplock-type définie sur « non-snaplock ».  Lors de l'exécution de l'opération de création de clone de volume, spécifiez la copie Snapshot comme « parent-snapshot ».  Plus d'informations sur la création d'un volume FlexClone avec un type SnapLocklink:https://docs.netapp.com/us-en/ontap/volumes/create-flexclone-task.html?q=volume+clone["ici."]
+
+
+NOTE: La mise en pratique des procédures de récupération à partir du coffre-fort informatique garantira que les étapes appropriées sont établies pour la connexion au coffre-fort informatique et la récupération des données.  La planification et le test de la procédure sont essentiels pour toute récupération lors d’un événement de cyberattaque.

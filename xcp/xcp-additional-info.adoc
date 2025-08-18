@@ -1,0 +1,22 @@
+---
+sidebar: sidebar 
+permalink: xcp/xcp-additional-info.html 
+keywords:  
+summary:  
+---
+= Où trouver des informations supplémentaires
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Pour en savoir plus sur les informations décrites dans ce document, reportez-vous aux documents et/ou sites Web suivants :
+
+* link:https://blog.netapp.com/tag/netapp-xcp/["Blogs NetApp XCP"]
+* link:https://docs.netapp.com/us-en/xcp/["Documentation NetApp XCP"]
+* link:https://docs.netapp.com/us-en/netapp-solutions-ai/data-analytics/bda-ai-introduction.html["Analyse de Big Data vers l'intelligence artificielle"^]
+

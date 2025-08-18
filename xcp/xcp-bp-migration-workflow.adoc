@@ -1,0 +1,53 @@
+---
+sidebar: sidebar 
+permalink: xcp/xcp-bp-migration-workflow.html 
+keywords: migration, workflow, nas, shares, copy, sync, truck, azure, expressroute 
+summary: 'La migration comporte différentes phases à suivre pour une meilleure planification et réalisation de la migration.  Pour migrer des données à partir d"un stockage NAS tiers ou d"un stockage NAS exporté directement connecté à l"aide de NetApp XCP, suivez les instructions de migration fournies dans cette section.' 
+---
+= Flux de travail de migration
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+La migration comporte différentes phases à suivre pour une meilleure planification et réalisation de la migration.  Pour migrer des données à partir d'un stockage NAS tiers ou d'un stockage NAS exporté directement connecté à l'aide de NetApp XCP, suivez les instructions de migration fournies dans cette section.
+
+La figure suivante illustre le flux de travail de migration de n’importe quel NAS vers un NAS NetApp .
+
+image:xcp-bp-003.png["Figure montrant une boîte de dialogue d'entrée/sortie ou représentant un contenu écrit"]
+
+
+
+== Sur site
+
+Le flux de travail de migration de n’importe quel NAS vers un NAS NetApp comprend les étapes suivantes :
+
+. Découvrez les partages et données NAS.
+. Analysez les données et produisez un rapport pour trouver la disposition des données.
+. Créez une ligne de base en exécutant la commande XCP Copy.  Pour des migrations plus rapides, sélectionnez davantage d’instances XCP et divisez la charge de travail au niveau du sous-dossier pour lancer des tâches de migration parallèles.
+. Pour les mises à jour incrémentielles, utilisez la synchronisation XCP jusqu'à ce que le taux de modification soit faible pour la fenêtre de basculement.
+. Marquez la source comme en lecture seule pour effectuer une synchronisation finale en exécutant la commande de synchronisation XCP pour terminer la migration.
+. Pour vérifier que les données ont été transférées correctement, comparez la source et la destination en exécutant la commande `xcp verify` commande.
+
+
+
+
+== Nuage
+
+Pour le cloud, vous pouvez suivre un flux de travail de migration sur site similaire si la connectivité entre le site et le cloud est une connexion directe (AWS), ExpressRoute (Azure) ou une interconnexion cloud (GCP).
+
+La figure suivante illustre le flux de travail de migration du site vers le cloud.
+
+image:xcp-bp-004.png["Figure montrant une boîte de dialogue d'entrée/sortie ou représentant un contenu écrit"]
+
+S'il n'y a pas de connexion Internet directe entre le site local et le cloud, vous devez transférer les données du site local vers le cloud via une méthode de transport de données hors ligne telle qu'un camion.  Chaque fournisseur de services cloud dispose d’une méthode différente avec une terminologie différente pour déplacer les données vers son centre de données.
+
+La figure suivante illustre la solution de déplacement de données sur site vers Azure sans ExpressRoute.
+
+image:xcp-bp-005.png["Figure montrant une boîte de dialogue d'entrée/sortie ou représentant un contenu écrit"]
+
+Vous pouvez utiliser une architecture similaire avec les composants respectifs des différents fournisseurs de services cloud.

@@ -1,0 +1,54 @@
+---
+sidebar: sidebar 
+permalink: protection-security-resources.html 
+keywords: 'netapp, solutions, data management, what"s new, updates, change log' 
+summary: Rapports techniques complémentaires liés à la protection et à la sécurité des données. 
+---
+= Ressources supplémentaires pour la protection et la sécurité des données
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Consultez les liens ci-dessous pour accéder aux rapports techniques liés à la protection et à la sécurité des données.
+
+
+
+== NVA-1143 : NetApp HCI - Contrôles de sécurité NIST pour FISMA avec HyTrust pour infrastructure multilocataire - Conception et déploiement NVA
+
+Arvind Ramakrishnan, Abhinav Singh, NetApp
+
+NVA-1143 décrit comment NetApp HCI peut être conçu et déployé pour répondre aux contrôles de sécurité et de confidentialité du National Institute of Standards and Technology (NIST) SP 800-53 Revision 4, qui sont essentiels pour les infrastructures de cloud privé et les déploiements multilocataires.
+
+link:https://www.netapp.com/pdf.html?item=/media/17065-nva1143pdf.pdf["NVA-1143 : NetApp HCI - Contrôles de sécurité NIST pour FISMA avec HyTrust pour infrastructure multilocataire - Conception et déploiement NVA"^]
+
+
+
+== TR-4320 : NetApp E-Series et Commvault Data Platform V11 – Architecture de référence et meilleures pratiques de stockage
+
+Akash Gupta, NetApp Girish Chanchlani, Commvault
+
+TR-4320 décrit l'architecture de référence et les meilleures pratiques lors de l'utilisation du stockage NetApp E-Series dans un environnement Commvault Data Platform V11.  Commvault et NetApp ont développé conjointement cette architecture de référence pour fournir des conseils pour les déploiements de Commvault Data Platform V11 avec le stockage NetApp E-Series qui accéléreront le temps d'application de cette solution.
+
+link:https://www.netapp.com/pdf.html?item=/media/17042-tr4320pdf.pdf["TR-4320 : NetApp E-Series et Commvault Data Platform V11 – architecture de référence et meilleures pratiques de stockage"^]
+
+
+
+== TR-4471 : Architecture de référence et meilleures pratiques de stockage des séries E et EF avec Veeam Backup & Replication 9.5
+
+Akash Gupta, NetApp Shawn Lieu (Amériques), Stefan Renner (EMEA) et Michael Cade (Performance), Veeam
+
+TR-4471 décrit l'architecture de référence et les meilleures pratiques lors de l'utilisation du stockage NetApp E-Series dans un environnement Veeam Backup & Replication 9.5.
+
+link:https://www.netapp.com/pdf.html?item=/media/17159-tr4471pdf.pdf["TR-4471 : Architecture de référence et meilleures pratiques de stockage des séries E et EF avec Veeam Backup  Replication 9.5"^]
+
+
+
+== TR-4704 : Déploiement de Veritas NetBackup avec le stockage NetApp E-Series
+
+Akash Gupta et Principled Technologies, NetApp
+
+TR-4704 décrit le déploiement de Veritas NetBackup sur le stockage NetApp E-Series.
+
+link:https://www.netapp.com/pdf.html?item=/media/16433-tr-4704pdf.pdf["TR-4704 : Déploiement de Veritas NetBackup avec le stockage NetApp E-Series"^]

@@ -1,0 +1,46 @@
+= 
+:allow-uri-read: 
+
+
+. Exigences pour le nœud de contrôle Ansible :
++
+.. Une machine RHEL/CentOS avec les packages suivants installés :
++
+... Python3
+... Pip3
+... Ansible (version supérieure à 2.10.0)
+... Git
+
+
+
+
+
+
+Si vous disposez d'une nouvelle machine RHEL/CentOS sans les exigences ci-dessus installées, suivez les étapes ci-dessous pour configurer cette machine comme nœud de contrôle Ansible :
+
+. Activer le référentiel Ansible pour RHEL-8/RHEL-7
++
+.. Pour RHEL-8 (exécutez la commande ci-dessous en tant que root)
++
+[source, cli]
+----
+subscription-manager repos --enable ansible-2.9-for-rhel-8-x86_64-rpms
+----
+.. Pour RHEL-7 (exécutez la commande ci-dessous en tant que root)
++
+[source, cli]
+----
+subscription-manager repos --enable rhel-7-server-ansible-2.9-rpms
+----
+
+
+. Collez le contenu ci-dessous dans le terminal
++
+[source, cli]
+----
+sudo yum -y install python3 >> install.log
+sudo yum -y install python3-pip >> install.log
+python3 -W ignore -m pip --disable-pip-version-check install ansible >> install.log
+sudo yum -y install git >> install.log
+----
+

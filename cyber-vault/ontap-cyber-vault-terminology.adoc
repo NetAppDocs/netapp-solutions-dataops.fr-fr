@@ -1,0 +1,37 @@
+---
+sidebar: sidebar 
+keywords: Cyber vault, cybervault, cyber-vault, data protection, security, ransomware, ONTAP, hardening 
+permalink: cyber-vault/ontap-cyber-vault-terminology.html 
+summary: Coffre-fort cybernétique avec terminologie ONTAP 
+---
+= Terminologie de Cyber Vault ONTAP
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Ce sont les termes couramment utilisés dans les architectures de coffres-forts cybernétiques.
+
+*Protection autonome contre les ransomwares (ARP)* - La fonction de protection autonome contre les ransomwares (ARP) utilise l'analyse de la charge de travail dans les environnements NAS (NFS et SMB) pour détecter et avertir de manière proactive et en temps réel des activités anormales pouvant indiquer une attaque de ransomware.  Lorsqu'une attaque est suspectée, ARP crée également de nouvelles copies Snapshot, en plus de la protection existante contre les copies Snapshot planifiées.  Pour plus d'informations, consultez lelink:https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["Documentation ONTAP sur la protection autonome contre les ransomwares"^]
+
+*Air-gap (logique)* - Vous pouvez configurer le stockage NetApp avec ONTAP comme un coffre-fort cybernétique logique à air-gap en tirant parti delink:https://docs.netapp.com/us-en/ontap/snaplock/commit-snapshot-copies-worm-concept.html["SnapLock Compliance aux copies Snapshot protégées par WORM"^]
+
+*Air-gap (physique)* - Un système physique isolé n'a aucune connectivité réseau.  À l’aide de sauvegardes sur bande, vous pouvez déplacer les images vers un autre emplacement.  L'espace d'air logique SnapLock Compliance est tout aussi robuste qu'un système d'espace d'air physique.
+
+*Hôte bastion* - Un ordinateur dédié sur un réseau isolé, configuré pour résister aux attaques.
+
+*Copies instantanées immuables* - Copies instantanées qui ne peuvent pas être modifiées, sans exception (y compris une organisation de support ou la possibilité de formater de bas niveau le système de stockage).
+
+*Copies instantanées indélébiles* - Copies instantanées qui ne peuvent pas être supprimées, sans exception (y compris une organisation de support ou la possibilité de formater à bas niveau le système de stockage).
+
+*Copies instantanées inviolables* - Les copies instantanées inviolables utilisent la fonction d'horloge de SnapLock Compliance pour verrouiller les copies instantanées pendant une période spécifiée.  Ces instantanés verrouillés ne peuvent pas être supprimés par un utilisateur ou par le support NetApp .  Vous pouvez utiliser des copies Snapshot verrouillées pour récupérer des données si un volume est compromis par une attaque de ransomware, un logiciel malveillant, un pirate informatique, un administrateur malveillant ou une suppression accidentelle.  Pour plus d'informations, consultez lelink:https://docs.netapp.com/us-en/ontap/snaplock/snapshot-lock-concept.html["Documentation ONTAP sur les copies instantanées inviolables"^]
+
+* SnapLock* - SnapLock est une solution de conformité haute performance pour les organisations qui utilisent le stockage WORM pour conserver des fichiers sous une forme non modifiée à des fins réglementaires et de gouvernance. Pour plus d'informations, consultez le link:https://docs.netapp.com/us-en/ontap/snaplock/["Documentation ONTAP sur SnapLock"^] .
+
+* SnapMirror* - SnapMirror est une technologie de réplication de reprise après sinistre, conçue pour répliquer efficacement les données.  SnapMirror peut créer un miroir (ou une copie exacte des données), un coffre-fort (une copie des données avec une conservation de copie Snapshot plus longue), ou les deux sur un système secondaire, sur site ou dans le cloud.  Ces copies peuvent être utilisées à de nombreuses fins différentes, telles qu'une catastrophe, une explosion vers le cloud ou un coffre-fort informatique (lors de l'utilisation de la politique de coffre-fort et du verrouillage du coffre-fort).  Pour plus d'informations, consultez lelink:https://docs.netapp.com/us-en/ontap/concepts/snapmirror-disaster-recovery-data-transfer-concept.html["Documentation ONTAP sur SnapMirror"^]
+
+* SnapVault* - Dans ONTAP 9.3, SnapVault a été abandonné au profit de la configuration de SnapMirror à l'aide de la stratégie de coffre-fort ou de coffre-fort miroir.  Ce terme, bien que toujours utilisé, a également été déprécié. Pour plus d'informations, consultez le link:https://docs.netapp.com/us-en/ontap/concepts/snapvault-archiving-concept.html["Documentation ONTAP sur SnapVault"^] .

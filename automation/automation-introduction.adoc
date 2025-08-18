@@ -1,0 +1,34 @@
+---
+sidebar: sidebar 
+permalink: automation/automation-introduction.html 
+summary: 'L"automatisation des solutions NetApp permet au client d"automatiser le déploiement, la configuration et l"exécution de nombreuses tâches courantes d"infrastructure et d"application.' 
+keywords: netapp, solutions, automation, ansible, terraform 
+---
+= Automatisation des solutions NetApp
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+L'automatisation des solutions NetApp permet au client d'automatiser le déploiement, la configuration et l'exécution de nombreuses tâches courantes d'infrastructure et d'application.
+
+
+
+== Introduction
+
+En fournissant des solutions pour répondre aux défis commerciaux d'aujourd'hui, NetApp propose des solutions avec les objectifs suivants :
+
+* Fournir des étapes de déploiement et de configuration validées,
+* Fournir des solutions facilement consommables,
+* Fournir un déploiement de solution qui a un résultat prévisible, est facilement répétable et évolutif dans l'ensemble de l'entreprise d'un client.
+
+
+Afin d’atteindre ces objectifs, il est primordial que le déploiement et la configuration des infrastructures et/ou des applications délivrées via nos solutions soient simplifiés grâce à l’automatisation.  NetApp s’engage à simplifier la consommation de solutions grâce à l’automatisation.
+
+En utilisant des outils d'automatisation open source tels que Red Hat Ansible, HashiCorp Terraform ou Microsoft Powershell, les solutions NetApp ont la capacité d'automatiser le déploiement d'applications, le provisionnement du cloud, la gestion de la configuration et de nombreuses autres tâches informatiques courantes.  Les solutions NetApp tirent parti des artefacts d'automatisation disponibles publiquement, tout en fournissant une automatisation créée par NetApp , pour simplifier le déploiement global d'une solution.
+
+Lorsque des capacités d'automatisation sont disponibles, la documentation de la solution guidera l'utilisateur tout au long du processus d'automatisation de la solution ou des étapes de la solution via le ou les outils d'automatisation spécifiques.

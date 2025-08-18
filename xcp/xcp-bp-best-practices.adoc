@@ -1,0 +1,24 @@
+---
+sidebar: sidebar 
+permalink: xcp/xcp-bp-best-practices.html 
+keywords: best practices, guidelines, recommendations, IMT 
+summary: Cette section contient les meilleures pratiques, les directives et les recommandations pour la migration des données à l’aide de NetApp XCP. 
+---
+= Lignes directrices et recommandations sur les meilleures pratiques
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+* Utilisez le système d’exploitation client XCP, qui est pris en charge par IMT .  Le client pris en charge par IMT est qualifié par NetApp.
+* Exécutez XCP en tant qu'utilisateur root dans le système d'exploitation Linux pour effectuer la migration. Vous pouvez exécuter la commande xcp en tant qu'utilisateur sudo, mais elle n'est pas prise en charge par XCP.
+* Exécutez une seule instance de XCP par client.  Techniquement, vous pouvez exécuter plusieurs instances de XCP sur le même hôte à partir d'un emplacement différent, mais ce n'est pas une pratique prise en charge.  En effet, l’exécution de nombreuses instances peut entraîner un échec.
+* XCP NFS est capable de migrer à partir d'un ensemble de données source en direct et cette configuration est prise en charge.  Les migrations XCP SMB à partir d'un ensemble de données source en direct ne sont pas prises en charge et peuvent entraîner des échecs.
+* Il est recommandé de créer un nouvel instantané avec un nom différent pour chaque synchronisation incrémentielle afin de faciliter la création d'un chemin de migration incrémentielle basé sur le nom de l'instantané en cas d'échec.
+* Si vous effectuez une migration basée sur des instantanés, il est recommandé de poursuivre la migration basée sur des instantanés jusqu'au basculement.
+* Si vous avez plus de 10 millions de fichiers et que vous avez une modification incrémentielle des données de plus de 50 %, il est recommandé d'utiliser un nombre de cœurs plus élevé et plus de mémoire que la recommandation minimale dans le guide d'installation et d'administration.
+

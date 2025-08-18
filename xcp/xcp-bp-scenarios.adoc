@@ -1,0 +1,17 @@
+---
+sidebar: sidebar 
+permalink: xcp/xcp-bp-scenarios.html 
+keywords:  
+summary:  
+---
+= Aperçu
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Cette section décrit les scénarios clients et leurs architectures.

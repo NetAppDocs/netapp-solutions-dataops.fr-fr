@@ -1,0 +1,23 @@
+---
+sidebar: sidebar 
+permalink: xcp/xcp-bp-small-files.html 
+keywords: on-premises, cloud, migration, small files 
+summary: 'Ce cas d"utilisation est basé sur le plus grand client de l"industrie touristique NetApp pour la migration de millions de petits fichiers sur site vers le cloud.' 
+---
+= Utilisation du XCP Data Mover pour migrer des millions de petits fichiers vers un stockage flexible
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Ce cas d'utilisation est basé sur le plus grand client du secteur du tourisme NetApp pour la migration de données sur site vers le cloud.  Étant donné que la COVID-19 a réduit la demande dans le secteur du voyage, les clients souhaitent économiser sur les dépenses d’investissement liées au stockage haut de gamme dans leur environnement sur site pour l’application de tarification à la demande.  Ce client dispose d’un SLA strict pour migrer des millions de petits fichiers vers le cloud.
+
+La figure suivante illustre la migration des données depuis un environnement local vers Azure NetApp Files pour les petits fichiers.
+
+image:xcp-bp-031.png["Figure montrant une boîte de dialogue d'entrée/sortie ou représentant un contenu écrit"]
+
+Pour plus d'informations, consultez le https://blog.netapp.com/XCP-cloud-data-migration["Solution de transfert de données NetApp XCP : du site vers le cloud"^] blog.

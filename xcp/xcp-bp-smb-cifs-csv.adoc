@@ -1,0 +1,38 @@
+---
+sidebar: sidebar 
+permalink: xcp/xcp-bp-smb-cifs-csv.html 
+keywords: csv, data dump 
+summary: La commande de cette section vide les données au format CSV.  Vous pouvez additionner la colonne de taille pour obtenir la taille totale des données. 
+---
+= Création d'un fichier CSV à partir d'un partage SMB/CIFS
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+La commande suivante vide les données au format CSV.  Vous pouvez additionner la colonne de taille pour obtenir la taille totale des données.
+
+....
+xcp scan -match "((now-x.atime) / 3600) > 31*day" -fmt "'{}, {}, {}, {}'.format(relpath, name, strftime(x.atime, '%y-%m-%d-%H:%M:%S'), humanize_size(size))" -preserve-atime  >file.csv
+....
+Le résultat devrait ressembler à cet exemple :
+
+....
+erase\report_av_fp_cdot_crosstab.csvreport_av_fp_cdot_crosstab.csv20-01-29-10:26:2449.6MiB
+....
+Pour analyser jusqu'à la profondeur de trois sous-répertoires et fournir le résultat dans l'ordre de tri, exécutez la commande `xcp -du` commandez et videz la taille à chaque niveau de répertoire jusqu'à la profondeur de trois sous-répertoires.
+
+....
+./xcp  scan -du -depth 3 NFS_Server_IP:/source_vol
+ 
+....
+Pour trier, videz les informations dans un fichier CSV et triez les informations.
+
+....
+xcp scan -match "type == d" -depth 3 -fmt "'{}, {}, {}, {}'.format(name, relpath, size)" NFS_Server_IP:/share > directory_report.csv
+....
+Il s'agit d'un rapport personnalisé qui utilise le `-fmt` commande.  Il analyse tous les répertoires et vide le nom du répertoire, le chemin et la taille du répertoire dans un fichier CSV.  Vous pouvez trier la colonne de taille à partir de l'application de feuille de calcul.

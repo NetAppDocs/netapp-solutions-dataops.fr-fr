@@ -1,0 +1,89 @@
+= 
+:allow-uri-read: 
+
+
+Cette section décrit les étapes requises pour configurer les paramètres dans AWX/Ansible Tower qui préparent l'environnement pour la consommation de solutions automatisées NetApp .
+
+. Configurer l'inventaire.
++
+.. Accédez à Ressources → Inventaires → Ajouter et cliquez sur Ajouter un inventaire.
+.. Indiquez le nom et les détails de l’organisation et cliquez sur Enregistrer.
+.. Dans la page Inventaires, cliquez sur les ressources d’inventaire que vous venez de créer.
+.. S'il existe des variables d'inventaire, collez-les dans le champ des variables.
+.. Accédez au sous-menu Groupes et cliquez sur Ajouter.
+.. Indiquez le nom du groupe, copiez les variables du groupe (si nécessaire) et cliquez sur Enregistrer.
+.. Cliquez sur le groupe créé, accédez au sous-menu Hôtes et cliquez sur Ajouter un nouvel hôte.
+.. Fournissez le nom d'hôte et l'adresse IP de l'hôte, collez les variables d'hôte (si nécessaire) et cliquez sur Enregistrer.
+
+
+. Créer des types d’informations d’identification.  Pour les solutions impliquant ONTAP, Element, VMware ou toute autre connexion de transport basée sur HTTPS, vous devez configurer le type d'informations d'identification pour qu'il corresponde aux entrées de nom d'utilisateur et de mot de passe.
++
+.. Accédez à Administration → Types d’informations d’identification et cliquez sur Ajouter.
+.. Fournissez le nom et la description.
+.. Collez le contenu suivant dans la configuration d'entrée :
+
+
+
+
+[listing]
+----
+fields:
+- id: username
+type: string
+label: Username
+- id: password
+type: string
+label: Password
+secret: true
+- id: vsadmin_password
+type: string
+label: vsadmin_password
+secret: true
+----
+. Collez le contenu suivant dans la configuration de l'injecteur :
+
+
+[listing]
+----
+extra_vars:
+password: '{{ password }}'
+username: '{{ username }}'
+vsadmin_password: '{{ vsadmin_password }}'
+----
+. Configurer les informations d'identification.
++
+.. Accédez à Ressources → Informations d’identification et cliquez sur Ajouter.
+.. Saisissez le nom et les détails de l'organisation.
+.. Sélectionnez le type d'informations d'identification correct ; si vous avez l'intention d'utiliser la connexion SSH standard, sélectionnez le type Machine ou sélectionnez le type d'informations d'identification personnalisé que vous avez créé.
+.. Saisissez les autres détails correspondants et cliquez sur Enregistrer.
+
+
+. Configurer le projet.
++
+.. Accédez à Ressources → Projets et cliquez sur Ajouter.
+.. Saisissez le nom et les détails de l'organisation.
+.. Sélectionnez Git comme type d’informations d’identification de contrôle de source.
+.. Collez l'URL de contrôle de source (ou l'URL de clonage git) correspondant à la solution spécifique.
+.. En option, si l'URL Git est contrôlée par accès, créez et joignez les informations d'identification correspondantes dans les informations d'identification de contrôle de source.
+.. Cliquez sur Enregistrer.
+
+
+. Configurer le modèle de travail.
++
+.. Accédez à Ressources → Modèles → Ajouter et cliquez sur Ajouter un modèle de travail.
+.. Entrez le nom et la description.
+.. Sélectionnez le type de travail ; Exécuter configure le système en fonction d'un playbook et Vérifier effectue une exécution à sec du playbook sans réellement configurer le système.
+.. Sélectionnez l’inventaire, le projet et les informations d’identification correspondants pour le playbook.
+.. Sélectionnez le playbook que vous souhaitez exécuter dans le cadre du modèle de tâche.
+.. Habituellement, les variables sont collées pendant l'exécution.  Par conséquent, pour obtenir l'invite permettant de renseigner les variables lors de l'exécution, assurez-vous de cocher la case Invite au lancement correspondant au champ Variable.
+.. Fournissez tous les autres détails requis et cliquez sur Enregistrer.
+
+
+. Lancez le modèle de travail.
++
+.. Accédez à Ressources → Modèles.
+.. Cliquez sur le modèle souhaité, puis sur Lancer.
+.. Remplissez toutes les variables si vous y êtes invité au lancement, puis cliquez à nouveau sur Lancer.
+
+
+

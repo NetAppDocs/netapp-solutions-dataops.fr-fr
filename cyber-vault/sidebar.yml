@@ -1,0 +1,40 @@
+---
+section: ontap-cybervault
+title: Protection des données avec le coffre-fort cybernétique ONTAP
+pdf-filename: Coffre-fort cybernétique ONTAP
+entries:
+- title: Présentation du coffre-fort cybernétique ONTAP
+  url: "/cyber-vault/ontap-cyber-vault-overview.html"
+- title: Terminologie du coffre-fort informatique
+  url: "/cyber-vault/ontap-cyber-vault-terminology.html"
+- title: Dimensionnement du coffre-fort informatique pour ONTAP
+  url: "/cyber-vault/ontap-cyber-vault-sizing.html"
+- title: Créer un coffre-fort informatique
+  url: "/cyber-vault/ontap-create-cyber-vault-task.html"
+- title: Renforcement des coffres-forts informatiques
+  url: "/cyber-vault/ontap-cyber-vault-hardening.html"
+- title: Interopérabilité des coffres-forts cybernétiques
+  url: "/cyber-vault/ontap-cyber-vault-interop.html"
+- title: Questions fréquemment posées sur le coffre-fort cybernétique
+  url: "/cyber-vault/ontap-cyber-vault-faq.html"
+- title: Ressources du coffre-fort cybernétique
+  url: "/cyber-vault/ontap-cyber-vault-resources.html"
+- title: Création, renforcement et validation d'un coffre-fort cybernétique ONTAP
+    avec PowerShell
+  entries:
+  - title: Aperçu
+    url: "/cyber-vault/ontap-cyber-vault-ps-overview.html"
+  - title: Création d'un coffre-fort informatique
+    url: "/cyber-vault/ontap-cyber-vault-ps-creation.html"
+  - title: Renforcement des coffres-forts informatiques
+    url: "/cyber-vault/ontap-cyber-vault-ps-hardening.html"
+  - title: Validation du coffre-fort informatique
+    url: "/cyber-vault/ontap-cyber-vault-ps-validation.html"
+  - title: Récupération de données dans un coffre-fort informatique
+    url: "/cyber-vault/ontap-cyber-vault-ps-dr.html"
+  - title: Considérations supplémentaires
+    url: "/cyber-vault/ontap-cyber-vault-ps-consider.html"
+  - title: Configurer, analyser, script cron
+    url: "/cyber-vault/ontap-cyber-vault-ps-script.html"
+  - title: Conclusion sur le coffre-fort cybernétique
+    url: "/cyber-vault/ontap-cyber-vault-ps-conclusion.html"

@@ -1413,7 +1413,6 @@
   <block id="14324adbfb79ad4b6832f6a02a1275db" category="list-text">Téléchargez la licence XCP à partir du<block ref="eab886d42d2df7a710066e6d9bf6f5f5" category="inline-link-rx"></block> .  </block>
   <block id="7481213bd7173438d06de418474e428b" category="list-text">Vous devez avoir un compte NetApp sur mysupport.netapp.com ou vous pouvez vous inscrire gratuitement.</block>
   <block id="d25e9f08475ddf6a2701e7cfbd67ff06" category="list-text">Téléchargez la licence et préparez-la.</block>
-  <block id="b9611b870758eac97bd0c3bcb3fc8026" category="list-text">Créez un partage NFS sur site pour chaque volume Azure NetApp ou pour le service Cloud Volume (niveau de service premium) dans le cloud pour le catalogue XCP.</block>
   <block id="3d19c697861d11cce0f1d78d41cfea64" category="list-text">Créez un volume NAS et configurez le partage pour la destination des données.</block>
   <block id="4f2a304b9680876edc7cb61b5c4c7134" category="list-text">Pour plusieurs instances XCP, vous devez disposer d'un ou plusieurs serveurs ou instances cloud pour transférer les données de plusieurs dossiers ou fichiers sources vers la destination.</block>
   <block id="adc4e34febc2f5919cfa03870630c2fc" category="list-text">La taille maxdir (par défaut 308 Mo) définit le nombre maximal de fichiers (environ un million) dans un seul dossier.  Augmentez la valeur de taille maxdir pour augmenter le nombre de fichiers.  L'augmentation de la valeur a un effet sur les cycles CPU supplémentaires.</block>
@@ -1521,4 +1520,5 @@
   <block id="1eff9302c319abb4fe8a4c919bb75125" category="sidebar">Migration de données avec NetApp XCP</block>
   <block id="acf055fa7efae33ce06471f448ae1267" category="sidebar">Scénarios clients</block>
   <block id="c5071cdf8081474104ef1eee5ec6d784" category="sidebar">Migration de données CIFS avec ACL D'une boîte de stockage source vers ONTAP</block>
+  <block id="212969b8fbef38a460a102c0de1dc0a4" category="list-text">Créez un partage NFS sur site pour chaque volume Azure NetApp ou pour les Google Cloud NetApp Volumes (niveau de service premium) dans le cloud pour le catalogue XCP.</block>
 </blocks>

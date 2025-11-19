@@ -88,7 +88,7 @@ rpcinfo -p < NAS IP or on-prem nfs data LIF ip >
 .. Téléchargez la licence et préparez-la.
 
 
-. Créez un partage NFS sur site pour chaque volume Azure NetApp ou pour le service Cloud Volume (niveau de service premium) dans le cloud pour le catalogue XCP.
+. Créez un partage NFS sur site pour chaque volume Azure NetApp ou pour les Google Cloud NetApp Volumes (niveau de service premium) dans le cloud pour le catalogue XCP.
 . Créez un volume NAS et configurez le partage pour la destination des données.
 . Pour plusieurs instances XCP, vous devez disposer d'un ou plusieurs serveurs ou instances cloud pour transférer les données de plusieurs dossiers ou fichiers sources vers la destination.
 . La taille maxdir (par défaut 308 Mo) définit le nombre maximal de fichiers (environ un million) dans un seul dossier.  Augmentez la valeur de taille maxdir pour augmenter le nombre de fichiers.  L'augmentation de la valeur a un effet sur les cycles CPU supplémentaires.

@@ -18,6 +18,7 @@ Cette section fournit des étapes détaillées pour la migration des données de
 
 
 
+[[transitioning-7-mode-nfsv3-storage-to-ontap-for-nfs-data]]
 == Transition du stockage NFSv3 7-Mode vers ONTAP pour les données NFS
 
 Cette section fournit la procédure étape par étape dans le tableau suivant pour la transition d'une exportation NFSv3 source 7-Mode vers un système ONTAP .
@@ -410,6 +411,7 @@ Après `resume` termine la copie des fichiers, exécutez `verify` encore une foi
 
 
 
+[[transitioning-7-mode-volume-snapshot-copies-to-ontap]]
 == Transition des copies d'instantanés de volume en mode 7 vers ONTAP
 
 Cette section décrit la procédure de transition d'une copie NetApp Snapshot d'un volume source 7-Mode vers ONTAP.
@@ -797,6 +799,7 @@ xcp: resume '7msnap_res1': Values marked with a * include operations before resu
 
 
 
+[[migrating-aclv4-from-netapp-7-mode-to-a-netapp-storage-system]]
 == Migration d'ACLv4 de NetApp 7-Mode vers un système de stockage NetApp
 
 Cette section couvre la procédure étape par étape pour la transition d'une exportation NFSv4 source vers un système ONTAP .
@@ -806,6 +809,7 @@ NOTE: NetApp suppose que le volume source NFSv4 est exporté et monté sur le sy
 
 
 
+[[prerequisites-for-migrating-a-source-nfsv4-export-to-ontap]]
 === Conditions préalables à la migration d'une exportation source NFSv4 vers ONTAP
 
 Avant de migrer une exportation NFSv4 source vers ONTAP, les conditions préalables suivantes doivent être remplies :
@@ -833,6 +837,7 @@ drwxr-xr-x --- root root 4KiB 4KiB 17m43s vol1/DIR1/DIR11/DIR2/DIR22
 ....
 
 
+[[subdirectories-options]]
 === Options des sous-répertoires
 
 Les deux options pour travailler avec des sous-répertoires sont les suivantes :
@@ -1251,6 +1256,7 @@ Après `resume` termine la copie des fichiers, exécutez `verify` encore une foi
 
 
 
+[[transitioning-7-mode-smb-storage-to-ontap-for-cifs-data]]
 == Transition du stockage SMB 7-Mode vers ONTAP pour les données CIFS
 
 Cette section décrit la procédure étape par étape pour la transition d'un partage SMB source 7-Mode vers un système ONTAP .

@@ -18,6 +18,7 @@ Cette FAQ est destinée aux clients et partenaires NetApp .  Il répond aux ques
 
 
 
+[[what-is-a-netapp-cyber-vault]]
 == Qu'est-ce qu'un coffre-fort cybernétique NetApp ?
 
 Le coffre-fort informatique est une technique spécifique de protection des données qui consiste à stocker les données dans un environnement isolé, séparé de l'infrastructure informatique principale.
@@ -30,6 +31,7 @@ D’autres mesures au-delà des réseaux isolés impliquent la désactivation de
 
 
 
+[[netapps-approach-to-cyber-vault]]
 == L'approche de NetApp en matière de coffre-fort informatique
 
 NetApp Cyber Vault, optimisé par SnapLock, offre aux organisations une solution complète et flexible pour protéger leurs actifs de données les plus critiques.  En exploitant les technologies de renforcement d' ONTAP, NetApp vous permet de créer un coffre-fort cybernétique sécurisé, isolé et isolé, immunisé contre les cybermenaces en constante évolution.  Avec NetApp, vous pouvez garantir la confidentialité, l’intégrité et la disponibilité de vos données tout en maintenant l’agilité et l’efficacité de votre infrastructure de stockage.
@@ -44,6 +46,7 @@ Les principales caractéristiques de l'architecture de référence NetApp pour u
 
 
 
+[[cyber-vault-frequently-asked-questions]]
 == Questions fréquemment posées sur le coffre-fort cybernétique
 
 .Cyber Vault est-il un produit de NetApp?

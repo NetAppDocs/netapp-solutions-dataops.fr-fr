@@ -18,6 +18,7 @@ Cette section fournit des conseils de dépannage pour la migration de données �
 
 
 
+[[error-1-xcp-failed-with-nfs3-error-70-stale-filehandle-error-in-the-xcp-log]]
 == Erreur 1 : Échec de XCP avec erreur nfs3 70 : Erreur de handle de fichier obsolète dans le fichier xcp.log
 
 *Raison et orientation.*
@@ -26,6 +27,7 @@ Montez le dossier source et vérifiez que le dossier existe.  S'il n'existe pas 
 
 
 
+[[error-2-netapp-nfs-destination-volume-has-space-but-xcp-failed-with-nfs3-error-28-no-space-left-on-device]]
 == Erreur 2 : le volume de destination NetApp NFS dispose d'espace, mais XCP a échoué avec l'erreur nfs3 28 : plus d'espace disponible sur le périphérique
 
 *Raison et orientation.*

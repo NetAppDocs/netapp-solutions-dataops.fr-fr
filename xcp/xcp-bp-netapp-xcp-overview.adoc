@@ -18,6 +18,7 @@ NetApp XCP transfère les données à l’aide de multithreads et de fonctionnal
 
 
 
+[[data-move-or-migration]]
 == Déplacement ou migration de données
 
 NetApp XCP transfère les données de n'importe quel NAS vers NetApp NAS.  Ce processus comprend quatre opérations principales : numérisation, copie, synchronisation et vérification.  Il existe quelques fonctionnalités supplémentaires qui facilitent la surveillance et le transfert des données :
@@ -35,6 +36,7 @@ image:xcp-bp-001.png["Figure montrant une boîte de dialogue d'entrée/sortie ou
 
 
 
+[[file-system-analytics]]
 == Analyse du système de fichiers
 
 NetApp XCP vous permet nativement d'identifier, d'examiner et d'analyser des données non structurées pour améliorer les informations, une exigence clé pour les clients d'entreprise qui souhaitent utiliser ces informations pour une meilleure planification, pour opérationnaliser des actifs numériques de grande valeur et pour la gouvernance des données via le reporting et l'évaluation.
@@ -52,12 +54,14 @@ image:xcp-bp-002.png["Figure montrant une boîte de dialogue d'entrée/sortie ou
 
 
 
+[[delete]]
 == Supprimer
 
 Il peut être très difficile pour les équipes de stockage et les charges de travail d'automatisation de la conception électronique (EDA) de nettoyer de grands répertoires, qu'il s'agisse de données obsolètes ou de données de test qui doivent être nettoyées pour récupérer de l'espace de stockage.  XCP fournit une fonctionnalité de suppression rapide qui peut supprimer une arborescence de répertoires complète.  La fonction NetApp XCP Delete supprime les fichiers et les dossiers d'un chemin NAS donné.  Vous pouvez utiliser les filtres de correspondance pour supprimer un ensemble spécifique de fichiers et de dossiers.  Pour un grand nombre de fichiers et de dossiers, vous pouvez utiliser l'option Forcer, qui ne nécessite pas de confirmation pour supprimer.
 
 
 
+[[live-source-migration-support]]
 == Prise en charge de la migration des sources en direct
 
 La prise en charge de la migration de source en direct incluse dans XCP 1.7 permet la migration à partir d'une source de données en cours d'utilisation (activité de lecture et d'écriture).  XCP laisse de côté les fichiers qui sont utilisés pendant le travail de migration, tels que la copie et la synchronisation en cours d'exécution, et les informations sur les fichiers ignorés sont capturées dans le journal XCP.
@@ -69,6 +73,7 @@ NOTE: Aucun paramètre spécial n'est requis pour les migrations de sources en d
 
 
 
+[[prerequisites-for-xcp]]
 == Prérequis pour XCP
 
 Avant de déployer NetApp XCP, les conditions préalables suivantes doivent être remplies :

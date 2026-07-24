@@ -18,6 +18,7 @@ Des considérations supplémentaires doivent être prises en compte lors de la c
 
 
 
+[[capacity-sizing-considerations]]
 == Considérations relatives au dimensionnement de la capacité
 
 La quantité d'espace disque requise pour un volume de destination de coffre-fort cybernétique ONTAP dépend de divers facteurs, dont le plus important est le taux de variation des données dans le volume source.  La planification de sauvegarde et la planification d'instantanés sur le volume de destination affectent toutes deux l'utilisation du disque sur le volume de destination, et le taux de changement sur le volume source n'est probablement pas constant.  Il est judicieux de prévoir une capacité de stockage supplémentaire au-delà de celle requise pour s'adapter aux changements futurs du comportement de l'utilisateur final ou de l'application.
@@ -72,6 +73,7 @@ NOTE: Tenez compte de la croissance des données au fil du temps pour garantir q
 
 
 
+[[performance-impact-on-primary-source]]
 == Impact sur les performances du primaire/de la source
 
 Étant donné que le transfert de données est une opération d’extraction, l’impact sur les performances du stockage principal peut varier en fonction de la charge de travail, du volume de données et de la fréquence des sauvegardes.  Cependant, l’impact global sur les performances du système principal est généralement modéré et gérable, car le transfert de données est conçu pour décharger les tâches de protection et de sauvegarde des données vers le système de stockage du coffre-fort informatique.  Lors de la configuration initiale de la relation et de la première sauvegarde complète, une quantité importante de données est transférée du système principal vers le système de coffre-fort cybernétique (le volume de SnapLock Compliance ).  Cela peut entraîner une augmentation du trafic réseau et de la charge d'E/S sur le système principal.  Une fois la sauvegarde complète initiale terminée, ONTAP n'a plus qu'à suivre et transférer les blocs qui ont changé depuis la dernière sauvegarde.  Cela entraîne une charge d’E/S beaucoup plus faible par rapport à la réplication initiale.  Les mises à jour incrémentielles sont efficaces et ont un impact minimal sur les performances du stockage principal.  Le processus de coffre-fort s'exécute en arrière-plan, ce qui réduit les risques d'interférence avec les charges de travail de production du système principal.

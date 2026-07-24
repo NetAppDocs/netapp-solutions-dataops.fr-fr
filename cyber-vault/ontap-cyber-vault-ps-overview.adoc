@@ -31,6 +31,7 @@ NOTE: La même solution est applicable pour créer le coffre-fort cybernétique 
 
 
 
+[[high-level-steps-to-create-a-ontap-cyber-vault]]
 == Étapes de haut niveau pour créer un coffre-fort cybernétique ONTAP
 
 * Créer une relation de peering
@@ -72,6 +73,7 @@ image:ontap-cyber-vault-air-gap.png["Étapes de haut niveau pour créer un coffr
 
 
 
+[[solution-components]]
 == Composants de la solution
 
 NetApp ONTAP exécutant 9.15.1 sur les clusters source et de destination.

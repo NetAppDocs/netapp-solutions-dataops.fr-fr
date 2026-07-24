@@ -15,6 +15,7 @@ Découvrez les nouveautés en matière de solutions de gestion des données.
 
 
 
+[[18-august-2025]]
 == 18 août 2025
 
 Le site NetApp Solutions est désormais lelink:https://docs.netapp.com/us-en/netapp-solutions-family/index.html["Famille de solutions NetApp"^] , qui comprend les sites suivants :

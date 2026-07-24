@@ -18,6 +18,7 @@ Les sauvegardes par espacement d'air qui utilisent des méthodes traditionnelles
 
 
 
+[[pre-requisites]]
 == Prérequis
 
 Avant de commencer les étapes de la section suivante de ce document, assurez-vous que les conditions préalables suivantes sont remplies :
@@ -39,6 +40,7 @@ NOTE: Le cluster de coffres-forts cybernétiques peut se trouver dans le même c
 
 
 
+[[steps-to-create-a-ontap-cyber-vault]]
 == Étapes pour créer un coffre-fort numérique ONTAP
 
 . Utilisez l'interface de ligne de commande ONTAP ou le gestionnaire système pour initialiser l'horloge de conformité.

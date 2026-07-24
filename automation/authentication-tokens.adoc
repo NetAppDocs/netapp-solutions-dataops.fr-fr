@@ -18,12 +18,14 @@ Cette page fournit des informations détaillées sur la collecte des jetons d'ac
 
 
 
+[[aws-authentication-requirements-for-cvo-and-connector-using-netapp-cloud-manager]]
 == Exigences d'authentification AWS pour CVO et Connector à l'aide de NetApp Cloud Manager
 
 Pour configurer les déploiements automatisés de CVO et de connecteurs à l'aide des playbooks Ansible via AWX/Ansible Tower, les informations suivantes sont nécessaires :
 
 
 
+[[acquiring-accesssecret-keys-from-aws]]
 === Acquisition de clés d'accès/secrètes auprès d'AWS
 
 . Pour déployer CVO et Connector dans Cloud Manager, nous avons besoin d'une clé d'accès/secret AWS.  Obtenez les clés dans la console AWS en lançant IAM-->Utilisateurs-->votre nom d'utilisateur-->informations d'identification de sécurité-->Créer une clé d'accès.
@@ -37,6 +39,7 @@ image:access-keys.png["Jeton d'actualisation"]
 
 
 
+[[acquiring-refresh-token-from-netapp-cloud-central]]
 === Acquisition d'un jeton d'actualisation auprès de NetApp Cloud Central
 
 . Connectez-vous à votre compte Cloud Central en utilisant vos identifiants de compte à l'adresse https://services.cloud.netapp.com/refresh-token[]
@@ -47,6 +50,7 @@ image:token-authentication.png["Jeton d'actualisation"]
 
 
 
+[[acquiring-client-id]]
 === Acquisition de l'identifiant client
 
 . Accédez à la page API pour copier l'ID client à https://services.cloud.netapp.com/developer-hub[] .
@@ -58,6 +62,7 @@ image:client-id.png["ID client"]
 
 
 
+[[acquiring-key-pair-from-aws]]
 === Acquisition d'une paire de clés auprès d'AWS
 
 . Dans la console AWS, recherchez « Paire de clés » et créez une paire de clés avec « pem ».  N'oubliez pas le nom de votre paire de clés, nous l'utiliserons pour déployer le connecteur.
@@ -67,6 +72,7 @@ image:key-pair.png["Paire de clés"]
 
 
 
+[[acquiring-account-id]]
 === Acquisition d'un identifiant de compte
 
 . Dans Cloud Manager, cliquez sur Compte -> Gérer les comptes, puis copiez l’ID de compte à utiliser dans les variables pour AWX.

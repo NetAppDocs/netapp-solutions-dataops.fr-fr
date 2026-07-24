@@ -18,6 +18,7 @@ Ce cas d’utilisation est basé sur la plus grande preuve de concept de client 
 
 
 
+[[customer-challenges-and-requirements]]
 == Défis et exigences des clients
 
 Les défis et les exigences des clients qui méritent d’être notés sont les suivants :
@@ -29,6 +30,7 @@ Les défis et les exigences des clients qui méritent d’être notés sont les 
 
 
 
+[[data-mover-solution]]
 == Solution de transfert de données
 
 Dans cette solution, le système de fichiers MapR (MapR-FS) est créé à partir de disques locaux dans le cluster MapR.  La passerelle MapR NFS est configurée sur chaque nœud de données avec des IP virtuelles.  Le service de serveur de fichiers stocke et gère les données MapR-FS.  La passerelle NFS rend les données Map-FS accessibles depuis le client NFS via l'IP virtuelle.  Une instance XCP s'exécute sur chaque nœud de données MapR pour transférer les données de la passerelle Map NFS vers NetApp ONTAP NFS.  Chaque instance XCP transfère un ensemble spécifique de dossiers sources vers l'emplacement de destination.

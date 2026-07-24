@@ -4,6 +4,7 @@
 
 
 
+[[capacity-sizing-considerations]]
 == Considérations relatives au dimensionnement de la capacité
 
 La quantité d'espace disque requise pour un volume de destination de coffre-fort cybernétique ONTAP dépend de divers facteurs, dont le plus important est le taux de variation des données dans le volume source.  La planification de sauvegarde et la planification d'instantanés sur le volume de destination affectent toutes deux l'utilisation du disque sur le volume de destination, et le taux de changement sur le volume source n'est probablement pas constant.  Il est judicieux de prévoir une capacité de stockage supplémentaire au-delà de celle requise pour s'adapter aux changements futurs du comportement de l'utilisateur final ou de l'application.

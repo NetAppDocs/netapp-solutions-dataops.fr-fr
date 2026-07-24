@@ -18,6 +18,7 @@ NetApp a créé unlink:https://github.com/NetApp/ransomeware-cybervault-automati
 
 
 
+[[what-this-script-does]]
 == Ce que fait ce script
 
 * Appairage de cluster
@@ -31,6 +32,7 @@ NetApp a créé unlink:https://github.com/NetApp/ransomeware-cybervault-automati
 
 
 
+[[how-to-use-this-script]]
 == Comment utiliser ce script
 
 link:https://github.com/NetApp/ransomeware-cybervault-automation["Télécharger le script"^]et pour utiliser le script, suivez simplement les étapes ci-dessous :
@@ -48,6 +50,7 @@ NOTE: Le mode Cron peut être utilisé pour planifier la mise en veille et la re
 
 
 
+[[modes-of-operation]]
 == Modes de fonctionnement
 
 Le script d'automatisation fournit 3 modes d'exécution - `configure` , `analyze` et `cron` .

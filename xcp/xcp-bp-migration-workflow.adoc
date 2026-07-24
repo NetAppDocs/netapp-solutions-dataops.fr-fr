@@ -22,6 +22,7 @@ image:xcp-bp-003.png["Figure montrant une boîte de dialogue d'entrée/sortie ou
 
 
 
+[[on-premises]]
 == Sur site
 
 Le flux de travail de migration de n’importe quel NAS vers un NAS NetApp comprend les étapes suivantes :
@@ -36,6 +37,7 @@ Le flux de travail de migration de n’importe quel NAS vers un NAS NetApp compr
 
 
 
+[[cloud]]
 == Nuage
 
 Pour le cloud, vous pouvez suivre un flux de travail de migration sur site similaire si la connectivité entre le site et le cloud est une connexion directe (AWS), ExpressRoute (Azure) ou une interconnexion cloud (GCP).

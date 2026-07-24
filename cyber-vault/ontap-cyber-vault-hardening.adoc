@@ -18,6 +18,7 @@ Voici les recommandations supplémentaires pour renforcer un coffre-fort cybern�
 
 
 
+[[cyber-vault-hardening-recommendations]]
 == Recommandations pour renforcer les coffres-forts informatiques
 
 * Isoler les plans de gestion du coffre-fort cybernétique

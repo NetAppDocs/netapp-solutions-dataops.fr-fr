@@ -18,6 +18,7 @@ L'automatisation des solutions NetApp permet au client d'automatiser le déploie
 
 
 
+[[introduction]]
 == Introduction
 
 En fournissant des solutions pour répondre aux défis commerciaux d'aujourd'hui, NetApp propose des solutions avec les objectifs suivants :

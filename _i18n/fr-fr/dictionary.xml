@@ -684,7 +684,6 @@
   <block id="645198fb2e03205a7f761aeaff8ef26f" category="inline-link-macro">Premiers pas avec l'automatisation des solutions NetApp et Ansible</block>
   <block id="4e9de62bec55cb82f4c1cd06fda641ec" category="paragraph">Pour plus d'informations, veuillez visiter<block ref="8306967267ef07392858b509a9329df9" category="inline-link-macro-rx"></block></block>
   <block id="8ad7837dca490e02340e5510135b8589" category="inline-link-macro">formulaire de demande d'automatisation</block>
-  <block id="02e0e745ea83a0b975796e4741d478b8" category="paragraph">Pour demander une automatisation, veuillez remplir le<block ref="cb4462fd8f35840b40d613c14df7645c" category="inline-link-macro-rx"></block> .</block>
   <block id="79954394076a66945903422060c4d147" category="summary">Les étapes incluses dans cette page aideront à créer une solution de coffre-fort cybernétique basée sur ONTAP</block>
   <block id="ccdb43ad79994581f29c244aafca268c" category="doc">Créer un coffre-fort informatique avec ONTAP</block>
   <block id="50ff0c4edfe97bd6906d70c7ad767db5" category="paragraph">Les étapes ci-dessous vous aideront à créer un coffre-fort informatique avec ONTAP.</block>
@@ -1067,16 +1066,13 @@
   <block id="23b69f42a62554346d10d302e32866df" category="paragraph">Akash Gupta, NetApp Girish Chanchlani, Commvault</block>
   <block id="451f1cdad20049e4046b157a54826db1" category="paragraph">TR-4320 décrit l'architecture de référence et les meilleures pratiques lors de l'utilisation du stockage NetApp E-Series dans un environnement Commvault Data Platform V11.  Commvault et NetApp ont développé conjointement cette architecture de référence pour fournir des conseils pour les déploiements de Commvault Data Platform V11 avec le stockage NetApp E-Series qui accéléreront le temps d'application de cette solution.</block>
   <block id="b5132c157b5da84909699e1aad5ea13d" category="inline-link-macro">TR-4320 : NetApp E-Series et Commvault Data Platform V11 – architecture de référence et meilleures pratiques de stockage</block>
-  <block id="65c8e697e97b6ce1bd59d8334eaaab6f" category="paragraph"><block ref="65c8e697e97b6ce1bd59d8334eaaab6f" category="inline-link-macro-rx"></block></block>
   <block id="849bdf40e7fa0e2cab1cb845682e6f56" category="section-title">TR-4471 : Architecture de référence et meilleures pratiques de stockage des séries E et EF avec Veeam Backup &amp; Replication 9.5</block>
   <block id="febdd047851001456a2f0c683cfcfd2b" category="paragraph">Akash Gupta, NetApp Shawn Lieu (Amériques), Stefan Renner (EMEA) et Michael Cade (Performance), Veeam</block>
   <block id="3bad2cd66e539f0136fbf484133914dd" category="paragraph">TR-4471 décrit l'architecture de référence et les meilleures pratiques lors de l'utilisation du stockage NetApp E-Series dans un environnement Veeam Backup &amp; Replication 9.5.</block>
   <block id="f86686bed105d7053fbb06167a05f38e" category="inline-link-macro">TR-4471 : Architecture de référence et meilleures pratiques de stockage des séries E et EF avec Veeam Backup &amp;amp; Replication 9.5</block>
-  <block id="8a9473d2b45da95a2d08524f5b182c4d" category="paragraph"><block ref="30941a222a593c860776bbf0831d36d0" category="inline-link-macro-rx"></block></block>
   <block id="f0a30c2a34036665913459cc735f4786" category="section-title">TR-4704 : Déploiement de Veritas NetBackup avec le stockage NetApp E-Series</block>
   <block id="d223d0d947999082ea93b57a68b3614b" category="paragraph">Akash Gupta et Principled Technologies, NetApp</block>
   <block id="9c993f8d3d3aa7be9c86474635154c12" category="paragraph">TR-4704 décrit le déploiement de Veritas NetBackup sur le stockage NetApp E-Series.</block>
-  <block id="7ff53b7713dd7f38a4729f8a1a48f24e" category="paragraph"><block ref="7ff53b7713dd7f38a4729f8a1a48f24e" category="inline-link-macro-rx"></block></block>
   <block id="e22b4cfabd54ac34f636ba227f9e63f3" category="summary">Journal des modifications récentes apportées aux solutions de gestion de données NetApp .</block>
   <block id="ee9b834576787c7b5bf70f767336cc2a" category="doc">Nouveautés dans les solutions de gestion de données NetApp</block>
   <block id="d32acb669b8cc0767086c8f950cbb1a5" category="paragraph">Découvrez les nouveautés en matière de solutions de gestion des données.</block>
@@ -1304,7 +1300,6 @@
   <block id="1cd06f171a5a99926a67bd673014f765" category="paragraph">La documentation XCP fournit plusieurs options (avec des exemples) pour<block ref="53aefec08170b2ebed981a0a86d0dbe0" prefix=" " category="inline-code"></block> ,<block ref="12cba3ee81cf4a793796a51b6327c678" prefix=" " category="inline-code"></block> ,<block ref="63ad9d34f3503826e5f649ae6b7ac92c" prefix=" " category="inline-code"></block> , et<block ref="e8418d1d706cd73548f9f16f1d55ad6e" prefix=" " category="inline-code"></block> opérations.  Pour plus d'informations, consultez le<block ref="ae77d8ba86ab9e3027c314c6b4922595" category="inline-link-rx"></block> .</block>
   <block id="efa146517859e051c07fabac4c88d3e7" category="admonition">Les clients Windows doivent copier les données à l’aide de listes de contrôle d’accès (ACL).  NetApp recommande d'utiliser la commande<block ref="1b5d03dc1e4b5c3623897fd210394888" prefix=" " category="inline-code"></block> .  Pour des performances maximales, compte tenu du volume source contenant des données SMB avec ACL et des données accessibles par NFS et SMB, la cible doit être un volume NTFS.  À l'aide de XCP (version NFS), copiez les données du serveur Linux et exécutez la synchronisation XCP (version SMB) avec le<block ref="4332bdcfbd72db6a4dae51bd101af3d6" prefix=" " category="inline-code"></block> et<block ref="0e638f18c7569b1e062f20f430b0a5fc" prefix=" " category="inline-code"></block> options du serveur Windows pour copier les ACL des données sources vers les données SMB cibles.</block>
   <block id="85760de676a9f74f28f26115c39c9a0b" category="inline-link">Configuration de la politique « Gérer les journaux d'audit et de sécurité »</block>
-  <block id="a0251b301ad566d86ffa3916c5510295" category="paragraph">Pour les étapes détaillées, voir<block ref="06fdba77988da3047baf401e4fdefca5" category="inline-link-rx"></block> .</block>
   <block id="0957326f089aaf98a5b7b9110a2675cd" category="section-title">Étapes de déploiement - Migration des données HDFS/MapRFS</block>
   <block id="1f43fc63f63aad0b707e06b0753182a1" category="paragraph">Dans cette section, nous discutons de la nouvelle fonctionnalité XCP appelée Hadoop Filesystem Data Transfer to NAS, qui migre les données de HDFS/MapRFS vers NFS et vice versa.</block>
   <block id="ee68e5b99222bbc29a480fcb0d1d6ee2" category="section-title">Prérequis</block>
@@ -1521,4 +1516,9 @@
   <block id="c5071cdf8081474104ef1eee5ec6d784" category="sidebar">Migration de données CIFS avec ACL D'une boîte de stockage source vers ONTAP</block>
   <block id="212969b8fbef38a460a102c0de1dc0a4" category="list-text">Créez un partage NFS sur site pour chaque volume Azure NetApp ou pour les Google Cloud NetApp Volumes (niveau de service premium) dans le cloud pour le catalogue XCP.</block>
   <block id="61d7195d08cf43ed625cea7335343a3d" category="list-text">Protégez l'administration avec une vérification multi-administrateurs (MAV) en plus de l'authentification multifactorielle (MFA), renforçant ainsi la sécurité de l'accès administratif à la VM de stockage des données.</block>
+  <block id="8cbb26daa2814b121bc0187f41d2aa49" category="paragraph">Pour demander l'automatisation, veuillez remplir le <block ref="d6d30ca71a829656960b3c2afe5d3977" category="inline-link-macro-rx"></block>formulaire.</block>
+  <block id="ca741a1e5f4824bdceff5803b8e568e2" category="paragraph"><block ref="ca741a1e5f4824bdceff5803b8e568e2" category="inline-link-macro-rx"></block></block>
+  <block id="9e04934e2b5f8155e913240186c62981" category="paragraph"><block ref="e2f985c362d1ae2cbcacb384126f0b8a" category="inline-link-macro-rx"></block></block>
+  <block id="80055df86a3c2b11ad0dfb840b88ecf3" category="paragraph"><block ref="80055df86a3c2b11ad0dfb840b88ecf3" category="inline-link-macro-rx"></block></block>
+  <block id="2691288a52cb10d2ef1865e2cda3c957" category="paragraph">Pour obtenir des étapes détaillées, consultez<block ref="f740fe36a9dcef71f194f30f8caa8d00" category="inline-link-rx"></block>.</block>
 </blocks>

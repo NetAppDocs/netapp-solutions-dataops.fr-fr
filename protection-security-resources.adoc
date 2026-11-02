@@ -33,7 +33,7 @@ Akash Gupta, NetApp Girish Chanchlani, Commvault
 
 TR-4320 décrit l'architecture de référence et les meilleures pratiques lors de l'utilisation du stockage NetApp E-Series dans un environnement Commvault Data Platform V11.  Commvault et NetApp ont développé conjointement cette architecture de référence pour fournir des conseils pour les déploiements de Commvault Data Platform V11 avec le stockage NetApp E-Series qui accéléreront le temps d'application de cette solution.
 
-link:https://www.netapp.com/pdf.html?item=/media/17042-tr4320pdf.pdf["TR-4320 : NetApp E-Series et Commvault Data Platform V11 – architecture de référence et meilleures pratiques de stockage"^]
+link:https://www.netapp.com/pdf.html?item=/media/17042-tr4320.pdf["TR-4320 : NetApp E-Series et Commvault Data Platform V11 – architecture de référence et meilleures pratiques de stockage"^]
 
 
 
@@ -44,7 +44,7 @@ Akash Gupta, NetApp Shawn Lieu (Amériques), Stefan Renner (EMEA) et Michael Cad
 
 TR-4471 décrit l'architecture de référence et les meilleures pratiques lors de l'utilisation du stockage NetApp E-Series dans un environnement Veeam Backup & Replication 9.5.
 
-link:https://www.netapp.com/pdf.html?item=/media/17159-tr4471pdf.pdf["TR-4471 : Architecture de référence et meilleures pratiques de stockage des séries E et EF avec Veeam Backup  Replication 9.5"^]
+link:https://www.netapp.com/pdf.html?item=/media/17159-tr4471.pdf["TR-4471 : Architecture de référence et meilleures pratiques de stockage des séries E et EF avec Veeam Backup  Replication 9.5"^]
 
 
 
@@ -55,4 +55,4 @@ Akash Gupta et Principled Technologies, NetApp
 
 TR-4704 décrit le déploiement de Veritas NetBackup sur le stockage NetApp E-Series.
 
-link:https://www.netapp.com/pdf.html?item=/media/16433-tr-4704pdf.pdf["TR-4704 : Déploiement de Veritas NetBackup avec le stockage NetApp E-Series"^]
+link:https://www.netapp.com/pdf.html?item=/media/16433-tr-4704.pdf["TR-4704 : Déploiement de Veritas NetBackup avec le stockage NetApp E-Series"^]
